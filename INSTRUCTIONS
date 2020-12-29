@@ -1,0 +1,15 @@
+How to use:
+1) Download the dependent packages using pip. These include: csv, xlrd, pandas
+2) .xlsm should have the following criteria:
+    - has two tables called "Student Data" and "Table Data"
+    - the column names of "Student Data" - "last_name", "preferred_name", "sex_code", "BoardDay", "YOG" -
+    should be at index 1, 2, 3, 4, 5 respectively. If not, change main.py section called "Fill complete student list"
+    accordingly.
+    - the column names of "Table Data" - "Faculty", "Table", "Seats Assignable" - should be at index 1, 2, 6 respectively.
+    If not, change section called "Fill table list" accordingly.
+    - if an error occurs, a likely place to look is in csv_reader.py
+3) Run main.py using Python3
+4) Sample answer to prompt question: if the 4 classes currently at Taft are '20, '21, '22, and '23, the answer to the prompt
+is 2023.
+5) After you run the code, a file named "table assignments.txt" should be produced, and it contains the desired
+seating assignments.
